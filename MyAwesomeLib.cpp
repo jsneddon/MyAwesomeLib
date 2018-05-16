@@ -1,11 +1,11 @@
 #include "MyAwesomeLib.h"
 #include <stdio.h>
 
-MyAwesomeLib::MyAwesomeLib::MyAwesomeLib()
+MyAwesomeLibNS::MyAwesomeLib::MyAwesomeLib()
 {
 }
 
-void MyAwesomeLib::MyAwesomeLib::Info()
+void MyAwesomeLibNS::MyAwesomeLib::Info()
 {
     printf("Awesome lib!\n");
 }
