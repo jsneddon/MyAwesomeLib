@@ -1,14 +1,17 @@
 #ifndef _MYAWESOMELIB_
 #define _MYAWESOMELIB_
 
-class MyAwesomeLib
+namespace MyAwesomeLib
 {
-public:
-    MyAwesomeLib();
-    virtual ~MyAwesomeLib(){};
-    
-    void Info();
+    class MyAwesomeLib
+    {
+    public:
+        MyAwesomeLib();
+        virtual ~MyAwesomeLib(){};
+        
+        void Info();
 
-};
+    };
+}
 
 #endif
