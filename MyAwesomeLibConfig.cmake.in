@@ -1,0 +1,12 @@
+get_filename_component(FOLDER "${CMAKE_CURRENT_LIST_FILE}" PATH)
+get_filename_component(FOLDER "${FOLDER}" PATH) #remove cmake
+
+#is this correct way to set up find pack?
+add_library(MyAwesomeLib STATIC IMPORTED)
+set_property(TARGET MyAwesomeLib PROPERTY IMPORTED_LOCATION ${FOLDER}/lib/libMyAwesomeLib.a)
+
+set_target_properties( MyAwesomeLib
+PROPERTIES
+INTERFACE_INCLUDE_DIRECTORIES "${FOLDER}/include" )
+
+
