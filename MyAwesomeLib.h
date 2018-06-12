@@ -1,6 +1,6 @@
 #ifndef _MYAWESOMELIB_
 #define _MYAWESOMELIB_
-
+/**/
 namespace MyAwesomeLibNS
 {
     class MyAwesomeLib
